@@ -3,16 +3,15 @@ import PropTypes from "prop-types";
 
 import "./LotteryNumberBoard.css";
 import LotteryNumber from "../number/LotteryNumber";
-import LotteryContext from "../../../context/LotteryContext";
+import AppContext from "../../../context/AppContext";
 
 const MIN = 1;
 const MAX = 60;
 
-// const randomIntFromInterval = () =>
-//   Math.floor(Math.random() * (MAX - MIN + 1) + MIN);
-
 function LotteryNumberBoard({ pickedNumbers }) {
-  const { lottery } = useContext(LotteryContext);
+  const {
+    state: { lottery },
+  } = useContext(AppContext);
 
   let numbersList = [];
   for (let i = 0; i < MAX; i++) {
@@ -25,7 +24,9 @@ function LotteryNumberBoard({ pickedNumbers }) {
         <LotteryNumber
           key={index}
           number={entry}
-          picked={"winningNumbers" in lottery && lottery.winningNumbers[index]}
+          picked={
+            lottery && lottery?.winningNumbers && lottery.winningNumbers[index]
+          }
         />
       ))}
     </div>

@@ -1,18 +1,20 @@
 import React, { useContext } from "react";
-import LotteryContext from "../../../../context/LotteryContext";
 import LotteryTicket from "../ticket/LotteryTicket";
+import AppContext from "../../../../context/AppContext";
 
 import "./LotteryTicketList.css";
 
 function LotteryTicketList() {
-  const { lottery, tickets } = useContext(LotteryContext);
+  const {
+    state: { lottery },
+  } = useContext(AppContext);
 
   return (
     <div className="ticket__list">
       <h3>Tickets List</h3>
       <ul className="tickets">
-        {tickets
-          .map((entry) => {
+        {lottery?.tickets
+          ?.map((entry) => {
             return {
               id: entry.id,
               points: entry.numbers.reduce(

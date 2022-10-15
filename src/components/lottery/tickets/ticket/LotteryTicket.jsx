@@ -4,7 +4,7 @@ import "./LotteryTicket.css";
 
 function LotteryTicket({ id, lottery, numbers, points }) {
   return (
-    <>
+    <div className="ticket__card">
       <h4 className="ticket__title">
         <span className="id">{`${id.slice(0, 5)}...${id.slice(-5)}`}</span>
         <span className="points">{points}</span>
@@ -22,10 +22,9 @@ function LotteryTicket({ id, lottery, numbers, points }) {
         ))}
       </ul>
       <div className="action">
-        <button>Check</button>
-        <button>Redeem</button>
+        <button disabled={points < 20}>Redeem</button>
       </div>
-    </>
+    </div>
   );
 }
 

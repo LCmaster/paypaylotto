@@ -41,7 +41,7 @@ contract PayPayLottery is Ownable {
         address indexed owner
     );
 
-    uint256 private currentLotteryId = 0;
+    uint256 public currentLotteryId = 0;
 
     // constructor() {}
 

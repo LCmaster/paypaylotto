@@ -1,11 +1,14 @@
 import React, { useContext } from "react";
 import { GiTicket } from "react-icons/gi";
-import LotteryContext from "../../../../context/LotteryContext";
+import AppContext from "../../../../context/AppContext";
 
 import "./LotteryTicketControls.css";
 
 function LotteryTicketControls() {
-  const { lottery, onBuyTicket } = useContext(LotteryContext);
+  const {
+    state: { lottery },
+    onBuyTicket,
+  } = useContext(AppContext);
 
   return (
     <div className="tickets__controllers">
