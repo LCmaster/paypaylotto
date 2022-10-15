@@ -1,0 +1,17 @@
+.indicator {
+  // display: flex;
+  padding: 8px;
+  background-color: #eff5f5;
+
+  &__title {
+    font-size: 0.9rem;
+  }
+
+  &__content {
+    margin-top: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+  }
+}

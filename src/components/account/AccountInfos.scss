@@ -1,0 +1,23 @@
+.account__infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .token {
+    &__actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    &__buy-btn {
+      padding: 8px 16px;
+      font-size: 1rem;
+    }
+  }
+
+  .account__balance {
+    display: flex;
+    gap: 16px;
+    font-size: 2rem;
+  }
+}

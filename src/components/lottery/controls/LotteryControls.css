@@ -1,0 +1,7 @@
+.lottery__controllers {
+  gap: 8px;
+  display: flex;
+  flex-direction: column; }
+  .lottery__controllers button {
+    padding: 8px 16px;
+    font-size: 1rem; }

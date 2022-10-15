@@ -1,0 +1,6 @@
+.lottery__page {
+  gap: 8px;
+  display: grid;
+  grid-template-columns: auto calc(3rem * 10 + 8px * 10) auto; }
+  .lottery__page .ticket__list {
+    grid-column: 1/-1; }

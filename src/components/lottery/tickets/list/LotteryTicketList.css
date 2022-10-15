@@ -1,0 +1,5 @@
+.tickets {
+  list-style: none;
+  gap: 8px;
+  display: flex;
+  flex-flow: row wrap; }

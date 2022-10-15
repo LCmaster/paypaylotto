@@ -1,0 +1,56 @@
+.ticket {
+  &__item {
+    // padding: 8px;
+    background-color: #eff5f5;
+    border: 1px solid darken(#eff5f5, 50%);
+    border-radius: 8px;
+
+    .action {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    padding: 8px;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid darken(#eff5f5, 50%);
+    // border-bottom: 2px dashed darken(#eff5f5, 50%);
+  }
+
+  &__numbers {
+    list-style: none;
+    padding: 8px;
+    padding-top: 4px;
+    // border: 1px solid darken(#eff5f5, 50%);
+    // border-top: none;
+
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(5, auto);
+
+    .number {
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+      width: 2rem;
+      height: 2rem;
+
+      font-size: 0.75rem;
+
+      text-align: center;
+      border-radius: 2rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #ff4500;
+
+      &.picked {
+        background-color: #0f400f;
+      }
+    }
+  }
+}

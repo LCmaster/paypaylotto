@@ -1,0 +1,7 @@
+.tickets__controllers {
+  gap: 8px;
+  display: flex;
+  flex-direction: column; }
+  .tickets__controllers button {
+    padding: 8px 16px;
+    font-size: 1rem; }

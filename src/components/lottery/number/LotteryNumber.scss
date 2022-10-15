@@ -1,0 +1,23 @@
+.lottery__number {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 3rem;
+  height: 3rem;
+
+  text-align: center;
+  border-radius: 2.5rem;
+  font-weight: bold;
+
+  &:not(.lottery__number--picked) {
+    color: #aaa;
+    background-color: #d3d3d3;
+  }
+
+  &--picked {
+    color: #fff;
+    background-color: #ff4500;
+  }
+}

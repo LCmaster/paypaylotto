@@ -1,0 +1,35 @@
+.ticket__item {
+  background-color: #eff5f5;
+  border: 1px solid #588d8d;
+  border-radius: 8px; }
+  .ticket__item .action {
+    display: flex;
+    flex-direction: column; }
+
+.ticket__title {
+  padding: 8px;
+  padding-bottom: 4px;
+  display: flex;
+  justify-content: space-between; }
+
+.ticket__numbers {
+  list-style: none;
+  padding: 8px;
+  padding-top: 4px;
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(5, auto); }
+  .ticket__numbers .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.75rem;
+    text-align: center;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff4500; }
+    .ticket__numbers .number.picked {
+      background-color: #0f400f; }

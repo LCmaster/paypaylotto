@@ -1,0 +1,5 @@
+.lottery__number-board {
+  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(10, 3rem);
+}

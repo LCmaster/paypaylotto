@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header__heading {
+    gap: 8px;
+    display: flex;
+    align-items: center; }
+  .header .account {
+    border: 1px solid black;
+    padding: 8px 16px;
+    border-radius: 32px;
+    background-color: #fafafa;
+    font-weight: bold; }
+    .header .account__info {
+      text-align: right; }
+      .header .account__info strong {
+        display: inline-block;
+        margin-right: 8px; }
+    .header .account .signout-btn {
+      background: none;
+      border: none; }
